@@ -78,13 +78,13 @@ BUSY=0
 #
 # modprobe gpio-bb && mknod /dev/gpio-bb c 180 0
 # !MCLR/VPP        - PI19
-VPP=275
+VPP=85
 # PGM              - unused
 PGM=65535
 # PGC CLOCK        - PI18
-PGC=274
+PGC=84
 # PGD DATA_I/O     - PI17
-PGD=273
+PGD=82
 
 
 # ICSP I/O per half-bit sleep time for `kio'.
