@@ -18,7 +18,7 @@ define Package/pickle
   SECTION:=utils
   CATEGORY:=Utilities
   TITLE:=Microchip PIC Programmer
-  DEPENDS:=+libftdi1 +kmod-bit-bang-gpio
+  DEPENDS:=+kmod-bit-bang-gpio
 endef
 
 define Package/pickle/description
@@ -35,7 +35,7 @@ TARGET_CFLAGS+= -I$(STAGING_DIR)/usr/include/libftdi1 \
 define Build/Compile
 	$(MAKE) -C $(PKG_BUILD_DIR) \
 		$(TARGET_CONFIGURE_OPTS) \
-		CFLAGS="$(TARGET_CFLAGS) $(TARGET_CPPFLAGS) -std=gnu99 -DP12 -DP14 -DP16 -DP24 -DP32 -DPIO -DPCTRL -DPTEST -DBITBANG -DFTDI -DTTY -DQSORT" \
+		CFLAGS="$(TARGET_CFLAGS) $(TARGET_CPPFLAGS) -std=gnu99 -DP32 -DPIO -DPCTRL -DPTEST -DBITBANG -DTTY -DQSORT" \
 		build
 endef
 
@@ -48,6 +48,9 @@ define Package/pickle/install
 	$(INSTALL_BIN) ./config/RIPE_11_000301.hex $(1)/root/.pickle
 	$(INSTALL_BIN) ./config/config* $(1)/root/.pickle
 	$(INSTALL_BIN) ./config/*.sh $(1)/root/.pickle
+	$(INSTALL_DIR) $(1)/etc/init.d
+	$(CP) files/etc/init.d/* $(1)/etc/init.d
+
 endef
 
 define Package/pickle/postinst

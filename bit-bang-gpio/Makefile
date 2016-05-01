@@ -19,6 +19,7 @@ define KernelPackage/bit-bang-gpio
   DEPENDS:=@GPIO_SUPPORT
   FILES:=$(PKG_BUILD_DIR)/gpio-bb.ko
   KCONFIG:=
+  AUTOLOAD:=$(call AutoProbe,gpio-bb.ko)
 endef
 
 define KernelPackage/bit-bang-gpio/description

@@ -77,14 +77,14 @@ BUSY=0
 # BananaPi BIT-BANG GPIO (single PGD DATA I/O)
 #
 # modprobe gpio-bb && mknod /dev/gpio-bb c 180 0
-# !MCLR/VPP        - PI19
-VPP=85
-# PGM              - unused
+# RST
+VPP=82
+# PGM (unused)
 PGM=65535
-# PGC CLOCK        - PI18
-PGC=84
-# PGD DATA_I/O     - PI17
-PGD=82
+# PGD
+PGD=84
+# PGC
+PGC=85
 
 
 # ICSP I/O per half-bit sleep time for `kio'.

@@ -18,10 +18,10 @@
 #
 
 # build targets (enable:1 disable:0)
-P12=1
-P14=1
-P16=1
-P24=1
+P12=0
+P14=0
+P16=0
+P24=0
 P32=1
 PCTRL=1
 PTEST=1
@@ -32,7 +32,7 @@ TTY=1
 RPI=0
 MCP23017=0
 BITBANG=1
-FTDI=1
+FTDI=0
 
 # gdb else strip (gdb:1 strip:0)
 GDB=0
