@@ -25,7 +25,7 @@ The connections for the programming interface on the Ci40 use the raspberry pi c
              |     |                                .
              |     |                                .
                                                     .
-              MFIO_85 40|39		  0 0 0 0 0 0 0 0      .
+              MFIO_85 40|39		  0 0 0 0 0 0 0 0   .
               MFIO_84 38|37                         .
               MFIO_82 36|35                         .
               GND     34|33                         .
@@ -33,10 +33,10 @@ The connections for the programming interface on the Ci40 use the raspberry pi c
                       30|29                         .
                       28|27                         .
                       26|25                         .
-                      24|23		  0 0 0 0 0 0 0 0      .
+                      24|23		  0 0 0 0 0 0 0 0   .
                       22|21                         .
                       20|19                         .
-                      17|15		  0 0 0 0 0 0 0 0      .
+                      17|15		  0 0 0 0 0 0 0 0   .
                       14|13                         .
                       12|11                         .
                       10|9                          .
@@ -44,7 +44,7 @@ The connections for the programming interface on the Ci40 use the raspberry pi c
                       6 |5                          .
                       4 |3                          .
                       2 |1  3v3                     .
-                              0 0 0 0 0 0 0 0       .
+                                  0 0 0 0 0 0 0 0   .
                                                     .
 ```
 
